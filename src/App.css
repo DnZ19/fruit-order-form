@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body  {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-image: url("./assets/fruit.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
-.App-link {
-  color: #61dafb;
+#outer-container  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*border: 1px solid black;*/
+
+  width: 1400px;
+  margin: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#inner-container  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
+  /*border: 1px solid black;*/
+  background: rgba(255, 255, 255, 0.25);
+  margin-top: 50px;
+
+}
+
+.fruit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /*border: 1px solid black;*/
+  width: 92%;
+  margin: 10px;
+}
+
+.fruit-selector-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between ;
+  align-items: center;
+  width: 100%;
+  /*border: 1px solid black;*/
+
+}
+
+.fruit-counters input {
+  width: 200px;
+  background: none;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.fruit-counters button  {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 2px;
+  font-size: medium;
+  font-weight: bolder;
+}
+
+.mainButton {
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: medium;
+  width: 100%;
+
+}
+
+
+form  {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  border: 1px solid black;
+  background-color: rgba(245, 245, 245, 0.14);
+  margin: 20px;
+  width: 100%;
+
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  margin: 0 16px;
+
 }
